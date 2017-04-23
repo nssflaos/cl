@@ -1,0 +1,28 @@
+{
+  "name": "adocument",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": { 
+      "adocumentId":{"type":"number", "id":true, "description":" Document Id"},
+      "claimno":{ "type":"string","required":false },
+      "documentName" :{ "type":"string","required":false},  
+      "claimtype" :{ "type":"string","required":false}, 
+      "documenttype" :{ "type":"string","required":false},
+      "lawtext" :{ "type":"string","required":false},
+      "stepno" :{ "type":"number","required":false},
+      "complete" :{ "type":"boolean","required":false},
+      "present" :{ "type":"boolean","required":false},
+      "comment":{ "type":"string","required":false},
+      "docpath":{ "type":"string","required":false},
+      "tbadocumentId" :{ "type":"number","required":false},
+      "receptionId" :{ "type":"number","required":false},
+      "stepId" :{ "type":"number","required":false}
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

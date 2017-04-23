@@ -1,0 +1,24 @@
+{
+  "name": "step",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": { 
+      "stepId":{"type":"number", "id":true, "description":" Step Id"},
+      "ssid":{ "type":"string","required":false },
+      "stepdate" :{ "type":"date","required":false},     
+      "steptime" :{ "type":"date","required":false},
+      "active" :{ "type":"boolean","required":false},
+      "stepno" :{ "type":"number","required":false},
+      "complete" :{ "type":"boolean","required":false},
+      "comment":{ "type":"string","required":false},
+      "officerId":{ "type":"string","required":false},
+      "workflowId":{ "type":"number","required":true}
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

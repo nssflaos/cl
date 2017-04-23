@@ -1,0 +1,37 @@
+{
+  "name": "spouse",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+     "ssid":{"type":"string", "id":true, "description":"Ssid"},
+      "sso":{"type":"string","required":false},   
+      "ssnum":{"type":"string","required":false},  
+      "name":{"type":"string","required":false},   
+      "surname":{"type":"string","required":false},   
+      "birthdate":{"type":"string","required":false},  
+      "sex":{"type":"string","required":false},   
+      "province_id":{"type":"string","required":false},   
+      "district_id":{"type":"string","required":false},   
+      "village_id":{"type":"string","required":false},    
+      "nationalcard":{"type":"string","required":false},   
+      "job":{"type":"string","required":false},    
+      "socialcard":{"type":"string","required":false},    
+      "hosptl":{"type":"string","required":false},    
+      "hosptl1":{"type":"string","required":false}, 
+      "disable":{"type":"string","required":false},   
+      "mobile":{"type":"string","required":false},    
+      "tel":{"type":"string","required":false},    
+      "fax":{"type":"string","required":false},  
+      "pobox":{"type":"string","required":false},   
+      "keydate":{"type":"string","required":false},  
+      "changedate":{"type":"string","required":false}
+     
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

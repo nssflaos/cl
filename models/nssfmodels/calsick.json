@@ -1,0 +1,46 @@
+{
+  "name": "calsick",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+      
+      "calcno":{"type":"string","required":true}, 
+      "claimno":{"type":"string","required":true},  
+      "ssid":{"type":"string","required":true},
+      "datenum":{"type":"number","required":false}, 
+      "datefrom":{"type":"date","required":false},
+      "dateto":{"type":"date","required":false},
+      "datedes":{"type":"date","required":false},
+      "averwage":{"type":"number","required":false},
+      "averdate":{"type":"number","required":false},
+      "percent":{"type":"number","required":false},
+      "perrefuse":{"type":"number","required":false},
+      "total":{"type":"number","required":false},
+      "dateout":{"type":"date","required":false},
+      "month1":{"type":"string","required":false},
+      "wage1":{"type":"number","required":false},
+      "month2":{"type":"string","required":false},
+      "wage2":{"type":"number","required":false},
+      "month3":{"type":"string","required":false},
+      "wage3":{"type":"number","required":false},
+      "month4":{"type":"string","required":false},
+      "wage4":{"type":"number","required":false},
+      "month5":{"type":"string","required":false},
+      "wage5":{"type":"number","required":false},
+      "month6":{"type":"string","required":false},
+      "wage6":{"type":"number","required":false},
+      "workflowId":{"type":"number","required":false},
+      "officerId":{"type":"string","required":false},
+      "createdAt":{"type":"date","required":true},
+      "updatedAt":{"type":"date","required":true},
+      "stepComplete":{"type":"boolean","required":false}, 
+      "calsickId":{"type":"number", "id":true, "description":"Calsick id"}
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,38 @@
+{
+  "name": "employee",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+     "ssid":{"type":"string", "id":true, "description":"Ssid"},
+      "sso":{"type":"string","required":false},                    
+      "ssnum":{"type":"string","required":false},           
+      "name":{"type":"string","required":false},             
+      "surname":{"type":"string","required":false},         
+      "sex":{"type":"string","required":false},             
+      "birthdate":{"type":"string","required":false},       
+      "labour":{"type":"string","required":false},         
+      "marstatus":{"type":"string","required":false},      
+      "nationalcard":{"type":"string","required":false},     
+      "issudate":{"type":"string","required":false},        
+      "familybook":{"type":"string","required":false},    
+      "hosptl":{"type":"string","required":false},             
+      "status":{"type":"string","required":false},             
+      "childnum":{ "type": "string","required":false},      
+      "keydate":{"type":"string","required":false},            
+      "changedate":{"type":"string","required":false},         
+      "province_id":{"type":"string","required":false},         
+      "district_id":{"type":"string","required":false},         
+      "village_id":{"type":"string","required":false},        
+      "rno":{ "type": "number","required":false},              
+      "ssnum_chk":{"type":"string","required":false},         
+      "changedate_chk":{"type":"string","required":false},        
+      "nationality":{"type":"string","required":false}
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

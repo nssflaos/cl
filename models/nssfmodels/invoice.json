@@ -1,0 +1,39 @@
+{
+  "name": "invoice",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+      "invoiceId":{"type":"number", "id":true, "description":"Invoice id"},
+      "calcno":{"type":"string","required":true},
+      "calcdate":{"type":"date","required":true},   
+      "claimno":{"type":"string","required":true}, 
+      "claimdate":{"type":"date","required":true},   
+      "betchno":{"type":"string","required":false},    
+      "exdate":{"type":"string","required":false},     
+      "name":{"type":"string","required":false},    
+      "surname":{"type":"string","required":false}, 
+      "sex":{"type":"string","required":false},   
+      "ssnum":{"type":"string","required":false},   
+      "ssid":{"type":"string","required":false},     
+      "emprname":{"type":"string","required":false},    
+      "emprcode":{"type":"string","required":false},    
+      "claimtype": {"type":"string","required":false},        
+      "remark":{"type":"string","required":false},     
+      "sendmonth":{"type":"string","required":false}, 
+      "averday":{"type":"number","required":false},  
+      "averwage":{"type":"number","required":false},    
+      "total":{"type":"number","required":false},      
+      "paye":{"type":"number","required":false},       
+      "paydate":{"type":"string","required":false},     
+      "seqnopay":{"type":"number","required":false},
+      "workflowId":{"type":"number","required":false},       
+      "officer":{"type":"string","required":false}
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

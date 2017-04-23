@@ -1,0 +1,28 @@
+{
+  "name": "calpercent",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": { 
+      "calpercentId":{"type":"number", "id":true, "description":" Calpercent Id"},
+      "claimtype" :{ "type":"string","required":false},
+      "percent1":{ "type":"number","required":false}, 
+      "law1" :{ "type":"string","required":false},
+      "percent2":{ "type":"number","required":false}, 
+      "law2" :{ "type":"string","required":false},
+      "lastmodificationdate" :{ "type":"date","required":false},
+      "officerId" :{ "type":"string","required":false},
+      "officerName" :{ "type":"string","required":false},
+      "numberofmonth":{ "type":"number","required":false},
+      "othervalue":{ "type":"number","required":false,"description":" For Future use"},
+      "startmonth":{ "type":"string","required":false,"description":" Start Month"},
+      "comment":{ "type":"string","required":false,"description":" Comment"}
+  },
+  "validations": [],
+   "relations": {
+    },
+  "acls": [],
+  "methods": {}
+}

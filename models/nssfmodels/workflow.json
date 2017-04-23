@@ -1,0 +1,35 @@
+{
+  "name": "workflow",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": { 
+      "workflowId":{"type":"number", "id":true, "description":" Workflow Id"},
+      "ssid":{ "type":"string","required":false },
+      "claimtype" :{ "type":"string","required":false},     
+      "claimno" :{ "type":"string","required":false},
+      "complete" :{ "type":"boolean","required":false},
+      "numberofstep":{ "type":"number","required":false},
+      "activestep":{ "type":"number","required":false},
+      "conditionconfirmed" :{ "type":"boolean","required":false},
+      "receptionId":{ "type":"number","required":true}
+  },
+  "validations": [],
+   "relations": {
+      "reception": {
+      "type": "belongsTo",
+      "model": "Reception",
+      "foreignKey":"receptionId"
+      },
+      "workflow_step": {
+      "type": "hasMany",
+      "model": "step",
+      "foreignKey":"workflowId"
+    }
+},
+
+  "acls": [],
+  "methods": {}
+}

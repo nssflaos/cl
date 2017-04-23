@@ -1,0 +1,35 @@
+{
+  "name": "reception",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+        "receptionId":{"type":"number", "id":true, "description":"Reception id"},
+        "ssid":{ "type":"string","required":false},  
+        "entry_number":{ "type":"string","required":false},  
+        "deliver_name":{ "type":"string","required":false},  
+        "deliver_phone":{ "type":"string","required":false},    
+        "claimno":{ "type":"string","required":false},          
+        "claimtype":{ "type":"string","required":false},             
+        "officerId":{ "type":"string","required":false},      
+        "reception_date":{ "type":"date","required":false},
+        "reception_time":{ "type":"string","required":false},
+        "nextdate":{ "type":"date","required":false},      
+        "stepComplete":{"type":"number","required":false},          
+        "document_complete":{ "type":"number","required":false},
+        "comment":{ "type":"string","required":false},
+        "receptionType":{ "type":"string","required":false},
+        "emprcode":{ "type":"string","required":false},
+        "emprname":{ "type":"string","required":false},
+        "numberOfDocument":{ "type":"number","required":false},
+        "workflowId":{"type":"number","required":false}
+    },
+
+"validations": [],
+"relations": {
+},
+  "acls": [],
+  "methods": {}
+}

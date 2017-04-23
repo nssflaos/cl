@@ -1,0 +1,40 @@
+{
+  "name": "caldeath_tr",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+      "calcno":{"type":"string","required":true},  
+      "claimno":{"type":"string","required":false},      
+      "ssid":{"type":"string","required":false},      
+      "averwage":{"type":"number","required":false},       
+      "totaldeath":{"type":"number","required":false},      
+      "year":{"type":"number","required":false},     
+      "month":{"type":"number","required":false},           
+      "totalfamily":{"type":"number","required":false},     
+      "alltotal":{"type":"number","required":false},        
+      "dateout":{"type":"date","required":false},       
+      "month1":{"type":"string","required":false},      
+      "wage1":{"type":"number","required":false},       
+      "month2":{"type":"string","required":false},       
+      "wage2":{"type":"number","required":false},      
+      "month3":{"type":"string","required":false},      
+      "wage3":{"type":"number","required":false},   
+      "month4":{"type":"string","required":false},     
+      "wage4":{"type":"number","required":false},    
+      "month5":{"type":"string","required":false},     
+      "wage5":{"type":"number","required":false},       
+      "month6":{"type":"string","required":false},      
+      "wage6":{"type":"number","required":false}, 
+      "workflowId":{"type":"number","required":false},
+      "stepComplete":{"type":"boolean","required":false},     
+      "caldeathId":{"type":"number", "id":false, "description":"Caldeath id"},
+      "caldeath_trId":{"type":"number", "id":true, "description":"CaldeathTR id"}
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

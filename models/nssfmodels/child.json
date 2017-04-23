@@ -1,0 +1,38 @@
+{
+  "name": "child",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+      "sso":{"type":"string","required":false},   
+      "dcode":{"type":"string","required":false},      
+      "ssid":{"type":"string","required":false},       
+      "ssnum":{"type":"string","required":false},     
+      "no":{"type":"number","required":false},         
+      "name":{"type":"string","required":false},      
+      "surname":{"type":"string","required":false},    
+      "birthdate":{"type":"string","required":false},       
+      "sex":{"type":"string","required":false},                
+      "province_id":{"type":"string","required":false},       
+      "district_id":{"type":"string","required":false},        
+      "village_id":{"type":"string","required":false},     
+      "relation":{"type":"string","required":false},       
+      "school":{"type":"string","required":false},       
+      "hosptl":{"type":"string","required":false},     
+      "hosptl1":{"type":"string","required":false},      
+      "disable":{"type":"string","required":false},     
+      "mobile":{"type":"string","required":false},       
+      "tel":{"type":"string","required":false},     
+      "fax":{"type":"string","required":false},       
+      "pobox":{"type":"string","required":false},        
+      "keydate":{"type":"string","required":false},       
+      "changedate":{"type":"string","required":false}, 
+      "childId":{"type":"string", "id":true, "description":"Child id"}
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

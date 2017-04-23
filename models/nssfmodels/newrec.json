@@ -1,0 +1,18 @@
+{
+  "name": "newrec",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+      "ssid":{ "type":"string","required":false},  
+      "reception_date":{ "type":"string","required":false}
+    },
+
+"validations": [],
+"relations": {
+},
+  "acls": [],
+  "methods": {}
+}

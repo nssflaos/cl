@@ -1,0 +1,35 @@
+{
+  "name": "inregis",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+      "seqno":{"type":"number","required":false},       
+      "claimno":{"type":"string","required":false},      
+      "claimdate":{"type":"date","required":false},       
+      "name":{"type":"string","required":false},        
+      "surname":{"type":"string","required":false},     
+      "ssid":{"type":"string","required":false},         
+      "ssnum":{"type":"string","required":false},        
+      "emprname":{"type":"string","required":false},     
+      "emprcode":{"type":"string","required":false},    
+      "officerId":{"type":"string","required":false},    
+      "claimtype":{"type":"string","required":false},    
+      "remark":{"type":"string","required":false},     
+      "note":{"type":"string","required":false},        
+      "regismonth":{"type":"string","required":false},  
+      "active":{"type":"number","required":false},     
+      "pass":{"type":"number","required":false},        
+      "cond_level":{"type":"number","required":false},
+      "runningNumber":{"type":"number","required":false},
+      "workflowId":{"type":"number","required":false},
+      "stepComplete":{"type":"boolean","required":false},
+      "inregisId":{"type":"number", "id":true, "description":"Inregis id"}
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

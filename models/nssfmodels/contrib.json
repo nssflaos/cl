@@ -1,0 +1,32 @@
+{
+  "name": "contrib",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+      "sso":{"type":"string","require":false},
+      "emprcode":{"type":"string","require":false}, 
+      "branchcode":{"type":"string","require":false},  
+      "ssid":{"type":"string","require":false },      
+      "ssnum":{"type":"string","require":false},
+      "schedno":{"type":"string","require":false}, 
+      "month":{"type":"string","require":false},
+      "allwages":{"type":"Number","require":false}, 
+      "wages":{"type":"Number","require":false},
+      "empramtdue":{"type":"Number","require":false}, 
+      "empeamtdue":{"type":"Number","require":false},
+      "seqno":{"type":"Number","require":false},
+      "paydate":{"type":"string","require":false},
+      "dateceased":{"type":"string","require":false},
+      "link_id":{"type":"string","require":false}, 
+      "payrate":{"type":"Number","require":false}, 
+      "pp":{"type":"Number","require":false},
+       "contribId":{"type":"Number", "id":true, "description":"Contrib id"}
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

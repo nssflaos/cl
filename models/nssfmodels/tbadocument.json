@@ -1,0 +1,22 @@
+{
+  "name": "tbadocument",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": { 
+      "tbadocumentId":{"type":"number", "id":true, "description":" Document Id"},
+      "documentName" :{ "type":"string","required":false},  
+      "claimtype" :{ "type":"string","required":false}, 
+      "documenttype" :{ "type":"string","required":false},
+      "lawtext" :{ "type":"string","required":false},
+      "applieddate" :{ "type":"date","required":false},
+      "comment":{ "type":"string","required":false},
+      "docno":{ "type":"string","required":false}
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
